@@ -1,4 +1,4 @@
-const Joi = require('joi');
+const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
 
 const Picture = mongoose.model('Picture', new mongoose.Schema({
