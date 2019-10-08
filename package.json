@@ -48,23 +48,19 @@
     "styleguide:build": "styleguidist build"
   },
   "dependencies": {
-    "@babel/polyfill": "*",
-    "@emotion/babel-preset-css-prop": "^10.0.17",
-    "@emotion/core": "^10.0.17",
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.5",
-    "@hapi/joi": "^16.1.5",
-    "babel-plugin-emotion": "^10.0.19",
-    "color": "^3.1.2",
-    "express": "^4.17.1",
-    "mongoose": "5.0.1",
-    "raw-loader": "^3.1.0",
-    "react": "*",
-    "react-dom": "*",
-    "react-redux": "^7.1.1",
-    "react-router-dom": "^5.1.0",
-    "redux": "^4.0.4",
-    "slugify": "^1.3.5"
+    "bcrypt": "^2.0.0",
+    "config": "^1.29.4",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-async-errors": "^2.1.0",
+    "fawn": "^2.1.5",
+    "joi": "^13.4.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.20.1",
+    "mongoose": "^5.0.2",
+    "winston": "^2.4.0",
+    "winston-mongodb": "^3.0.0"
   }
 }
