@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
-const tests = require ('./tests');
-const express = require ('express');
+const winston = require("winston");
+const express = require("express");
+const config = require("config");
 const app = express();
 
-//Connexion BDD
-mongoose.connect('mongodb://localhost/BorisDoye')
-    .then(() => console.log ('Connecté à MongoDB'))
-    .catch(err=> console.error ("Connexion échouée à MongoDB...", err));
+require("./startup/logging")();
+require("./startup/cors")(app);
+require("./startup/routes")(app);
+require("./startup/db")();
+require("./startup/config")();
+require("./startup/validation")();
 
-app.use(express.json());
-app.use('/api/tests', tests);
+const port = process.env.PORT || config.get("port");
+const server = app.listen(port, () =>
+  winston.info(`Listening on port ${port}...`)
+);
 
-
-//PORT
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Ecoute sur le port ${port}...`));
-
+module.exports = server;
