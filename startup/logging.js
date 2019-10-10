@@ -1,5 +1,5 @@
 const winston = require('winston');
-// require('winston-mongodb');
+require('winston-mongodb');
 require('express-async-errors');
 
 module.exports = function() {
@@ -12,7 +12,7 @@ module.exports = function() {
   });
   
   winston.add(winston.transports.MongoDB, { 
-    db: 'mongodb+srv://oclockteam:oclock2019;@borisdoyeproject-yznva.mongodb.net/admin?retryWrites=true&w=majority',
+    db: 'mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/test?retryWrites=true&w=majority',
     level: 'info'
   });
 }
