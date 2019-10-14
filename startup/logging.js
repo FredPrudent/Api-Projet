@@ -11,6 +11,8 @@ module.exports = function() {
     throw ex;
   });
   
+
+  winston.add(winston.transports.File, { filename: 'logfile.log' });
   winston.add(winston.transports.MongoDB, { 
     db: 'mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority',
     level: 'info'
