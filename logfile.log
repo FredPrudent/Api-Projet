@@ -16,3 +16,9 @@
 {"level":"info","message":"Connecté à mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-10-14T10:06:32.223Z"}
 {"level":"info","message":"Ecoute sur le port 27017...","timestamp":"2019-10-14T10:08:47.903Z"}
 {"level":"info","message":"Connecté à mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority...","timestamp":"2019-10-14T10:08:48.332Z"}
+{"level":"info","message":"Ecoute sur le port 27017...","timestamp":"2019-10-14T10:29:36.769Z"}
+{"level":"info","message":"Connecté à mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority...","timestamp":"2019-10-14T10:29:37.240Z"}
+{"level":"info","message":"Ecoute sur le port 27017...","timestamp":"2019-10-14T10:35:15.045Z"}
+{"level":"info","message":"Connecté à mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority...","timestamp":"2019-10-14T10:35:15.533Z"}
+{"level":"info","message":"Ecoute sur le port 27017...","timestamp":"2019-10-15T13:06:50.251Z"}
+{"level":"info","message":"Connecté à mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority...","timestamp":"2019-10-15T13:06:50.725Z"}

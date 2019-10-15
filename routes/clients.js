@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-  const clients = await Client.find().sort("client_name");
+  const clients = await Client.find();
   res.send(clients);
 });
 

@@ -1,5 +1,6 @@
 const express = require('express');
 const auth = require('../routes/auth');
+const videos = require('../routes/videos');
 const clients = require('../routes/clients');
 const collaborators = require('../routes/collaborators');
 const equipments = require('../routes/equipments');
@@ -12,6 +13,7 @@ const error = require('../middleware/error');
 module.exports = function(app) {
   app.use(express.json());
   app.use('/api/auth', auth);
+  app.use('/api/videos', videos)
   app.use('/api/clients', clients);
   app.use('/api/collaborators', collaborators);
   app.use('/api/equipments', equipments);
