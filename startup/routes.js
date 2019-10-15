@@ -1,7 +1,7 @@
 const express = require('express');
 const auth = require('../routes/auth');
 const videos = require('../routes/videos');
-const clients = require('../routes/clients');
+const workpartners = require('../routes/workpartners');
 const collaborators = require('../routes/collaborators');
 const equipments = require('../routes/equipments');
 const pictures = require('../routes/pictures');
@@ -14,7 +14,7 @@ module.exports = function(app) {
   app.use(express.json());
   app.use('/api/auth', auth);
   app.use('/api/videos', videos)
-  app.use('/api/clients', clients);
+  app.use('/api/workpartners', workpartners);
   app.use('/api/collaborators', collaborators);
   app.use('/api/equipments', equipments);
   app.use('/api/pictures', pictures);

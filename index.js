@@ -10,6 +10,7 @@ require("./startup/db")();
 require("./startup/config")();
 require("./startup/validation")();
 
+
 const port = process.env.PORT || config.get("port");
 const server = app.listen(port, () =>
   winston.info(`Ecoute sur le port ${port}...`)

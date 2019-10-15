@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const mongoose = require('mongoose');
 
-const Equipment = mongoose.model('Equipment', new mongoose.Schema({
+const Equipment = mongoose.model('equipments', new mongoose.Schema({
     equipment_name: String, 
     equipment_picture: String, 
     equipment_description: String 
