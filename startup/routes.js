@@ -6,7 +6,7 @@ const collaborators = require('../routes/collaborators');
 const equipments = require('../routes/equipments');
 const pictures = require('../routes/pictures');
 const posts = require ('../routes/posts');
-const professional_datas = require ('../routes/professional_datas');
+const professional_infos = require ('../routes/professional_infos');
 const users = require('../routes/users');
 const error = require('../middleware/error');
 
@@ -19,7 +19,7 @@ module.exports = function(app) {
   app.use('/api/equipments', equipments);
   app.use('/api/pictures', pictures);
   app.use('/api/posts', posts);
-  app.use('/api/professional_datas', professional_datas)
+  app.use('/api/professional_infos', professional_infos)
   app.use('/api/users', users);
   app.use(error);
 }

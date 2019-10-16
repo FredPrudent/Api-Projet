@@ -2,7 +2,8 @@ const Joi = require('joi');
 const mongoose = require('mongoose');
 
 const Video = mongoose.model('Video', new mongoose.Schema({
-  
+
+    name: String,
     link: String
     
 }));
@@ -10,6 +11,7 @@ const Video = mongoose.model('Video', new mongoose.Schema({
 function validateVideo(video) {
   const schema = {
     
+    name: Joi.string(),
     link: Joi.string()
     
     

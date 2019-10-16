@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Professional_data = mongoose.model('Professional_data', new mongoose.Schema({
+const Professional_info = mongoose.model('Professional_info', new mongoose.Schema({
     professional_name: String, 
     professional_mail: String, 
     professional_phone: Number,
@@ -9,5 +9,5 @@ const Professional_data = mongoose.model('Professional_data', new mongoose.Schem
 }));
 
 
-exports.Professional_data = Professional_data; 
+exports.Professional_info = Professional_info; 
 ;
