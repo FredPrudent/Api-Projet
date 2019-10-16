@@ -3,17 +3,18 @@ const mongoose = require('mongoose');
 
 const Video = mongoose.model('Video', new mongoose.Schema({
 
-    name: String,
-    link: String
+  video_source: String,
+    video_name: String,
+    video_description: String
     
 }));
 
 function validateVideo(video) {
   const schema = {
     
-    name: Joi.string(),
-    link: Joi.string()
-    
+    video_source: Joi.string(),
+    video_name: Joi.string(),
+    video_description: Joi.string()
     
   };
 

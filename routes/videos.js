@@ -22,8 +22,10 @@ router.post('/', async (req, res) => {
 
   let video = new Video({ 
     
-    link: req.body.link,
-    name: req.body.name
+    video_source: req.body.video_source,
+    video_name: req.body.video_name,
+    video_description: req.body.video_description
+
 
   });
   video = await video.save();
@@ -37,8 +39,9 @@ router.put('/:id', async (req, res) => {
   
   const video = await Video.findByIdAndUpdate(req.params.id,
     { 
-        link: req.body.link,
-        name: req.body.name
+        video_source: req.body.video_source,
+        video_name: req.body.video_name,
+        video_description: req.body.video_description
 
     }, { new: true });
   
