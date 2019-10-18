@@ -1,3 +1,4 @@
+const parser = require ("body-parser");
 const auth = require("../middleware/auth");
 const bcrypt = require("bcrypt");
 const _ = require("lodash");

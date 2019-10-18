@@ -1,5 +1,5 @@
 {
-    "jwtPrivateKey": "",
+    "jwtPrivateKey": "oclock_jwtPrivateKey",
     "db": "mongodb+srv://oclockteam:oclock2019@borisdoyeproject-yznva.mongodb.net/boris_doye_database?retryWrites=true&w=majority",
     "port": "27017"
     
